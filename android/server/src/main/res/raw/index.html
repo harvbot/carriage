@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Harvbot Carriage Bot</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href="" />
+    <!--favicons-->
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicons-->
+    <script src="jquery.js"></script>
+    <script src="control.js" type="text/javascript"></script>
+    <style media="all">
+        table{
+            bolder:none;
+        }
+
+        input[type=button]
+        {
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <table id="control-panel">
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input id="btn-forward" data-cmd="forward" type="button" value="forward" />
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btn-left" data-cmd="left" type="button" value="left" />
+            </td>
+            <td>
+                <input id="btn-stop" data-cmd="stop" type="button" value="stop" />
+            </td>
+            <td>
+                <input id="btn-right" data-cmd="right" type="button" value="right" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input id="btn-backward" data-cmd="backward" type="button" value="backward" />
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#control-panel").control();
+        });
+    </script>
+</body>
+</html>
